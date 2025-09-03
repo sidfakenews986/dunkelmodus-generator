@@ -14,6 +14,6 @@ document.getElementById('download-css').addEventListener('click', function() {
     const blob = new Blob([cssContent], { type: 'text/css' });
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
-    link.download = 'dunkelmodus.css';
+    link.download = 'custom-styles.css'; // Updated filename
     link.click();
 });
