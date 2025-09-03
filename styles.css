@@ -19,6 +19,6 @@ body {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #222;
+    background-color: #1a1a1a; /* Updated background color for better visibility */
     color: #e0e0e0; /* Changed text color for better contrast */
 }
