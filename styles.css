@@ -20,5 +20,5 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #222;
-    color: #fff;
+    color: #e0e0e0; /* Changed text color for better contrast */
 }
