@@ -1,13 +1,22 @@
 document.getElementById('background-color').addEventListener('input', function() {
-    document.getElementById('preview').style.backgroundColor = this.value;
+    if (isValidColor(this.value)) {
+        document.getElementById('preview').style.backgroundColor = this.value;
+    }
 });
-
 
 
 document.getElementById('text-color').addEventListener('input', function() {
-    document.getElementById('preview').style.color = this.value;
+    if (isValidColor(this.value)) {
+        document.getElementById('preview').style.color = this.value;
+    }
 });
 
+
+function isValidColor(color) {
+    const s = new Option().style;
+    s.color = color;
+    return s.color !== '';
+}
 
 document.getElementById('download-css').addEventListener('click', function() {
     const backgroundColor = document.getElementById('background-color').value;
