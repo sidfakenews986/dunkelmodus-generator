@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunkelmodus-Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Dunkelmodus-Generator</h1>
+        <div class="color-picker">
+            <label for="background-color">Hintergrundfarbe:</label>
+            <input type="color" id="background-color" value="#000000">
+        </div>
+        <div class="color-picker">
+            <label for="text-color">Textfarbe:</label>
+            <input type="color" id="text-color" value="#ffffff">
+        </div>
+        <div>
+            <button id="download-css">CSS herunterladen</button>
+        </div>
+        <div id="preview" class="preview">
+            <h2>Vorschau</h2>
+            <p>Dies ist eine Vorschau Ihres Dunkelmodus-Themen.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
